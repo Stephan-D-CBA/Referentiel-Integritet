@@ -18,6 +18,11 @@ public class Department {
     private int manager;
     private List<Employee> employees;
 
+    @Override
+    public String toString() {
+        return "Department{" + "id=" + id + ", name=" + name + ", manager=" + manager + '}';
+    }
+
     public int getId() {
         return id;
     }
