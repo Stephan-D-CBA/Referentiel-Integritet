@@ -89,7 +89,7 @@ public class DAO {
     public static void createEmployee(String name, String title, int fKey) throws SQLException, ClassNotFoundException {
         String SQL 
                 = "INSERT INTO employee "
-                + "(emp_name, emp_title, FK_dept_id) values ?, ?, ?";
+                + "(emp_name, emp_title, FK_dept_id) values (?, ?, ?)";
         
         try (Connection con = DBConnector.connection();
                 PreparedStatement pStmt = con.prepareStatement(SQL) ) {
