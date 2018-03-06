@@ -15,7 +15,7 @@ public class DBConnector {
     private static final String IP          = "46.101.114.190";
     private static final String PORT        = "3306";
     private static final String DATABASE    = "monday";
-    private static final String USERNAME    = "root";
+    private static final String USERNAME    = "crud";
     private static final String PASSWORD    = "password123";
     
     private static final String URL = "jdbc:mysql://" + IP + ":" + PORT + "/" + DATABASE;
